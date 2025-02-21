@@ -16,19 +16,17 @@ SLACK_SIGNING_SECRET=abc123def456
 - `Reactions`: This is an event that will react to messages if the conditions are met.
 	- `type`: This is currently unused, but will later allow for multiple types of triggers.
 	- `trigger`: For a text type, this is the string to match against.
-	- `emoji`: This is the name of the emoji to react with. _Note:_ do not include `:` characters.
+	- `emoji`: This is the name of the emoji to react with. __Note:__ do not include `:` characters.
 	- `channels`: This is a whitelist of channels for this `Reaction`. If excluded, all channels are allowed.
 
 - `Files`: This is an event that will reply to messages with a file if the conditions are met.
 	- `type`: This is currently unused, but will later allow for multiple types of triggers.
 	- `trigger`: For a text type, this is the string to match against.
-	- `path`: This is the path of the file to respond with. _Note:_ *relative to the python file*.
+	- `path`: This is the path of the file to respond with. __Note:__ *relative to the python file*.
 	- `channels`: This is a whitelist of channels for this `Reaction`. If excluded, all channels are allowed.
-	
-<p>
-_Note:_ If `channels` is empty, the bot will perform in all channels in which it has been added.
-_Note:_ `type` is currently not used. Later this will be used for different triggers.
-</p>
+
+__Note:__ If `channels` is empty, the bot will perform in all channels in which it has been added.  
+__Note:__ `type` is currently not used. Later this will be used for different triggers.  
 
 Example Configuration:
 ```
