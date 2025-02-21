@@ -16,19 +16,20 @@ SLACK_SIGNING_SECRET=abc123def456
 - `Reactions`: This is an event that will react to messages if the conditions are met.
 	- `type`: This is currently unused, but will later allow for multiple types of triggers.
 	- `trigger`: For a text type, this is the string to match against.
-	- `emoji`: This is the name of the emoji to react with. Note: do not include `:` characters.
+	- `emoji`: This is the name of the emoji to react with. _Note:_ do not include `:` characters.
 	- `channels`: This is a whitelist of channels for this `Reaction`. If excluded, all channels are allowed.
 
 - `Files`: This is an event that will reply to messages with a file if the conditions are met.
 	- `type`: This is currently unused, but will later allow for multiple types of triggers.
 	- `trigger`: For a text type, this is the string to match against.
-	- `path`: This is the path of the file to respond with. Note: *relative to the python file*.
+	- `path`: This is the path of the file to respond with. _Note:_ *relative to the python file*.
 	- `channels`: This is a whitelist of channels for this `Reaction`. If excluded, all channels are allowed.
 
-Note: If `channels` is empty, the bot will perform in all channels in which it has been added.
-Note: `type` is currently not used. Later this will be used for different triggers.
+_Note:_ If `channels` is empty, the bot will perform in all channels in which it has been added.
+_Note:_ `type` is currently not used. Later this will be used for different triggers.
+
 Example Configuration:
-'''
+```
 {
     "Reactions":[
         {
@@ -55,6 +56,7 @@ Example Configuration:
         }
     ]
 }
+```
 ## Hosting
 I designed this app to be used locally in conjunction with a tool like [ngrok](https://ngrok.com/), of course you could easily host it however you wish.
 
