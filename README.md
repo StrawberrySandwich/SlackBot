@@ -24,9 +24,11 @@ SLACK_SIGNING_SECRET=abc123def456
 	- `trigger`: For a text type, this is the string to match against.
 	- `path`: This is the path of the file to respond with. _Note:_ *relative to the python file*.
 	- `channels`: This is a whitelist of channels for this `Reaction`. If excluded, all channels are allowed.
-
+	
+<p>
 _Note:_ If `channels` is empty, the bot will perform in all channels in which it has been added.
 _Note:_ `type` is currently not used. Later this will be used for different triggers.
+</p>
 
 Example Configuration:
 ```
