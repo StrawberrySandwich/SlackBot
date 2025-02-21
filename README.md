@@ -1,9 +1,9 @@
 # SlackBot
 ## Configuration
 ### Environment
--SLACK_BOT_TOKEN
+- SLACK_BOT_TOKEN
 	- Slack: OAuth & Permissions > Bot User OAuth Token
--SLACK_SIGNING_SECRET
+- SLACK_SIGNING_SECRET
 	- Slack: Basic Information > Signing Secret
 
 Example:
