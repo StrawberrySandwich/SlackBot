@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  flask-app:
+    build: .
+    ports:
+      - "8080:5000"
+  
+  ngrok:
+    image: ngrok/ngrok:latest
+    command: http flask-app:5000
+    environment:
+      NGROK_AUTHTOKEN: "${NGROK_AUTH_TOKEN}"
+    depends_on:
+      - flask-app

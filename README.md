@@ -70,6 +70,9 @@ python SlackBot.py
 ngrok http http://localhost:8080
 ```
 
-
+To run in docker:
+```
+docker compose up --build
+```
 
 

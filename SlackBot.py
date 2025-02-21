@@ -52,4 +52,4 @@ def slack_events():
 
 if __name__ == '__main__':
     # Use ngrok to handle traffic
-    app.run(host='0.0.0.0', port=8080, debug=True)
+    app.run(host='0.0.0.0', port=5000, debug=True)
